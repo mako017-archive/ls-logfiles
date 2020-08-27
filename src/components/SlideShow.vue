@@ -1,21 +1,24 @@
 <template>
 	<div class="hello">
 		<h1>Page 1</h1>
-		<Slide html="<h2>Hello World</h2>" />
+		<Slide :html="pages" />
 	</div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Slide from "@/components/SlideShowComponents/Slide.vue";
+import { mapGetters } from "vuex";
 
 @Component({
 	components: {
 		Slide,
 	},
+	computed: mapGetters(["pages"]),
 })
 export default class SlideShow extends Vue {
 	@Prop() private msg!: string;
+	pages!: string;
 }
 </script>
 

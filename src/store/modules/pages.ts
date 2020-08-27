@@ -10,7 +10,9 @@ const state = {
 		},
 	],
 };
-const getters = {};
+const getters = {
+	pages: (state: any) => state.allPages[0].html,
+};
 const actions = {};
 const mutations = {};
 
