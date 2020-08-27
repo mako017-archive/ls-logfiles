@@ -1,14 +1,20 @@
 <template>
 	<div class="hello">
 		<h1>Page 1</h1>
+		<Slide html="<h2>Hello World</h2>" />
 	</div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import Slide from "@/components/SlideShowComponents/Slide.vue";
 
-@Component
-export default class HelloWorld extends Vue {
+@Component({
+	components: {
+		Slide,
+	},
+})
+export default class SlideShow extends Vue {
 	@Prop() private msg!: string;
 }
 </script>
