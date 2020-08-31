@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import SlideShow from "@/components/SlideShow.vue";
+import SlideShow from "@/components/slideshow.vue";
 
 @Component({
 	components: {
