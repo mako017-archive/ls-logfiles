@@ -3,6 +3,7 @@ import App from "./App.vue";
 import store from "./store";
 
 Vue.config.productionTip = false;
+require("@/assets/normalize.css");
 
 new Vue({
 	store,

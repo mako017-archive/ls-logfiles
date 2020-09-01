@@ -11,4 +11,23 @@ export default class Slide extends Vue {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+.container {
+	height: 95vh;
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 0.7rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+	h3 {
+		font-size: 1.2rem;
+		margin-bottom: 0.3rem;
+	}
+	p {
+		margin-bottom: 0.3rem;
+	}
+}
+</style>

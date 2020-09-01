@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import SlideShow from "@/components/slideshow.vue";
+import SlideShow from "@/components/SlideShow.vue";
 
 @Component({
 	components: {
@@ -23,6 +23,5 @@ export default class App extends Vue {}
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
-	margin-top: 60px;
 }
 </style>
