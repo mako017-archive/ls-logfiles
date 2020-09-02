@@ -7,7 +7,8 @@ const state: pagesState = {
 			html: `
 			<h2>Überschrift</h2>
 			<p>Ein einzelner Paragraph ohne besondere Formatierung.</p>
-			<p>Ein weiterer Paragraph ohne besondere Formatierung.</p>
+			<p style="color:blue;">Ein weiterer Paragraph mit inline CSS.</p>
+			<img src="https://images.unsplash.com/photo-1598312119337-7bfc5c22748b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
 			`,
 		},
 		{

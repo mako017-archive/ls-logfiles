@@ -14,6 +14,7 @@ export default class Slide extends Vue {
 <style lang="scss">
 .container {
 	height: 95vh;
+	max-height: 95vh;
 	h1 {
 		font-size: 2rem;
 		margin-bottom: 0.7rem;
@@ -28,6 +29,10 @@ export default class Slide extends Vue {
 	}
 	p {
 		margin-bottom: 0.3rem;
+	}
+	img {
+		max-width: 100%;
+		margin: 0 auto;
 	}
 }
 </style>
