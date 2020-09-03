@@ -8,3 +8,8 @@ export interface page {
 	type: string;
 	html: string;
 }
+
+export interface participantState {
+	VPCode: string;
+	logData: string;
+}

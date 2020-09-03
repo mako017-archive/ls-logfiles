@@ -1,10 +1,14 @@
 <template>
 	<div class="container">
-		<h1>Page {{ currentPage + 1 }}</h1>
+		<h1>Seite {{ currentPage + 1 }}</h1>
 		<Slide :html="currentPageHTML" />
 		<div class="button-container">
 			<button class="left hallo" @click="decrementPage">Zurück</button>
 			<button class="right" @click="incrementPage">Weiter</button>
+		</div>
+		<div>
+			<p>Temporärer Output</p>
+			<p>{{ logData }}</p>
 		</div>
 	</div>
 </template>
@@ -19,14 +23,18 @@ import { mapGetters, mapActions } from "vuex";
 		Slide,
 	},
 	methods: {
-		...mapActions(["decrementPage", "incrementPage"]),
+		...mapActions(["decrementPage", "incrementPage", "appendLog"]),
+		_decrementPage() {
+			return 1;
+		},
 	},
-	computed: mapGetters(["currentPageHTML", "currentPage"]),
+	computed: mapGetters(["currentPageHTML", "currentPage", "logData"]),
 })
 export default class SlideShow extends Vue {
 	@Prop() private msg!: string;
 	currentPageHTML!: string;
 	currentPage!: number;
+	logData!: string;
 }
 </script>
 
