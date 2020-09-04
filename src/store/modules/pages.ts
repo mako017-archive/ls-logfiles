@@ -25,6 +25,7 @@ const state: pagesState = {
 const getters = {
 	currentPageHTML: (state: pagesState) => state.allPages[state.currentPage].html,
 	currentPage: (state: pagesState) => state.currentPage,
+	pagesLength: (state: pagesState) => state.allPages.length,
 };
 const actions = {
 	decrementPage({ commit }: any) {

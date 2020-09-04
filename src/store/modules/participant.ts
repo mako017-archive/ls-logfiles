@@ -1,7 +1,7 @@
 import { participantState } from "@/types";
 const state: participantState = {
 	VPCode: "testVP",
-	logData: "asd",
+	logData: "",
 };
 const getters = {
 	VP: (state: participantState) => state.VPCode,
