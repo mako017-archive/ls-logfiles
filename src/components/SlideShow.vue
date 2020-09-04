@@ -3,8 +3,8 @@
 		<h1>Seite {{ currentPage + 1 }}</h1>
 		<Slide :html="currentPageHTML" />
 		<div class="button-container">
-			<button class="left hallo" @click="_decrementPage">Zurück</button>
-			<button class="right" @click="_incrementPage">Weiter</button>
+			<button v-if="currentPage >= 1" class="left" @click="_decrementPage">Zurück</button>
+			<button v-if="currentPage + 1 < pagesLength" class="right" @click="_incrementPage">Weiter</button>
 		</div>
 		<div>
 			<p>Temporärer Output</p>
