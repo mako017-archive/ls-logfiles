@@ -62,7 +62,6 @@ export default class SlideShow extends Vue {
 <style lang="scss" scoped>
 .slide-container {
 	height: 95vh;
-	// background-color: blue;
 }
 .container {
 	display: flex;
@@ -73,12 +72,16 @@ export default class SlideShow extends Vue {
 .button-container {
 	display: flex;
 	width: 100%;
-	// background-color: greenyellow;
 	button {
 		font-size: 1.2rem;
 	}
 	.right {
 		margin-left: auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	.container {
+		width: 96vw;
 	}
 }
 </style>
