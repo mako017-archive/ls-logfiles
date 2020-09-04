@@ -13,6 +13,7 @@ export default class Slide extends Vue {
 
 <style lang="scss">
 .container {
+	padding-top: 0.1rem;
 	height: 95vh;
 	max-height: 95vh;
 	h1 {
@@ -33,6 +34,16 @@ export default class Slide extends Vue {
 	img {
 		max-width: 100%;
 		margin: 0 auto;
+	}
+	.big-img {
+		width: 97vw;
+		position: absolute;
+		left: 1.5vw;
+		max-height: 90vh;
+		margin: 0.5rem 0;
+		img {
+			max-height: 90vh;
+		}
 	}
 }
 </style>

@@ -19,6 +19,13 @@ const state: pagesState = {
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			`,
 		},
+		{
+			id: 2,
+			type: "default",
+			html: `
+			<div class="big-img"><img src="https://images.unsplash.com/photo-1598312119337-7bfc5c22748b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" /></div>
+			`,
+		},
 	],
 	currentPage: 0,
 };

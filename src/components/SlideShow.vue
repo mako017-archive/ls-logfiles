@@ -1,7 +1,8 @@
 <template>
 	<div class="container">
-		<h1>Seite {{ currentPage + 1 }}</h1>
-		<Slide :html="currentPageHTML" />
+		<div class="slide-container">
+			<Slide :html="currentPageHTML" />
+		</div>
 		<div class="button-container">
 			<button v-if="currentPage >= 1" class="left" @click="_decrementPage">Zurück</button>
 			<button v-if="currentPage + 1 < pagesLength" class="right" @click="_incrementPage">Weiter</button>
@@ -59,6 +60,10 @@ export default class SlideShow extends Vue {
 </script>
 
 <style lang="scss" scoped>
+.slide-container {
+	height: 95vh;
+	// background-color: blue;
+}
 .container {
 	display: flex;
 	flex-direction: column;
@@ -68,6 +73,7 @@ export default class SlideShow extends Vue {
 .button-container {
 	display: flex;
 	width: 100%;
+	// background-color: greenyellow;
 	button {
 		font-size: 1.2rem;
 	}
