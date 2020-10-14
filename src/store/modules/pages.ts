@@ -23,7 +23,7 @@ const state: pagesState = {
 			id: 2,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://images.unsplash.com/photo-1598312119337-7bfc5c22748b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Picture1.png" /></div>
 			`,
 		},
 	],

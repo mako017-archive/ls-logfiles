@@ -71,12 +71,12 @@ export default class SlideShow extends Vue {
 }
 .button-container {
 	display: flex;
-	width: 100%;
+	margin-left: auto; // width: 100%;
 	button {
 		font-size: 1.2rem;
 	}
 	.right {
-		margin-left: auto;
+		margin-left: 0.5rem;
 	}
 }
 @media screen and (max-width: 480px) {
