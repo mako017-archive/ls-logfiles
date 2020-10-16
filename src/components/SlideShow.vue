@@ -5,7 +5,7 @@
 		</div>
 		<div class="prompt">Beliebiger Text</div>
 		<div class="button-container">
-			<button v-if="currentPage >= 1" class="left" @click="_decrementPage">Zurück</button>
+			<button v-if="currentPage - 1 >= 1" class="left" @click="_decrementPage">Zurück</button>
 			<button class="right" @click="_incrementPage">{{ contBtn }}</button>
 		</div>
 		<!-- <div>
