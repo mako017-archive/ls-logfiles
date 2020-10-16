@@ -110,6 +110,7 @@ const state: pagesState = {
 const getters = {
 	currentPageHTML: (state: pagesState) => state.allPages[state.currentPage].html,
 	currentPage: (state: pagesState) => state.currentPage,
+	currentPrompt: (state: pagesState) => state.allPages[state.currentPage].prompt,
 	pagesLength: (state: pagesState) => state.allPages.length,
 	contBtn: (state: pagesState) => state.contBtn,
 };

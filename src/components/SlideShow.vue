@@ -3,7 +3,7 @@
 		<div class="slide-container">
 			<Slide :html="currentPageHTML" />
 		</div>
-		<div v-if="showPrompt" class="prompt">Beliebiger Text</div>
+		<div v-if="showPrompt && currentPrompt" class="prompt">{{ currentPrompt }}</div>
 		<div class="button-container">
 			<button v-if="currentPage - 1 >= 1" class="left" @click="_decrementPage">Zurück</button>
 			<button class="right" @click="_incrementPage">{{ contBtn }}</button>
@@ -21,12 +21,13 @@ import { mapGetters, mapActions } from "vuex";
 		Slide,
 	},
 	methods: mapActions(["decrementPage", "incrementPage", "appendLog"]),
-	computed: mapGetters(["currentPageHTML", "currentPage", "logData", "pagesLength", "contBtn", "showPrompt"]),
+	computed: mapGetters(["currentPageHTML", "currentPage", "currentPrompt", "logData", "pagesLength", "contBtn", "showPrompt"]),
 })
 export default class SlideShow extends Vue {
 	timestamp!: number;
 	currentPageHTML!: string;
 	currentPage!: number;
+	currentPrompt!: string;
 	logData!: string;
 	pagesLength!: number;
 	decrementPage!: () => void;
@@ -61,7 +62,7 @@ export default class SlideShow extends Vue {
 
 <style lang="scss" scoped>
 .slide-container {
-	height: 90vh;
+	height: 89vh;
 }
 .container {
 	display: flex;
