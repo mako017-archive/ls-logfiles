@@ -72,7 +72,7 @@ export default class SlideShow extends Vue {
 .prompt {
 	text-align: right;
 	color: orangered;
-	font-size: 1.2rem;
+	font-size: 1.7rem;
 	margin-bottom: 0.5rem;
 }
 .button-container {
