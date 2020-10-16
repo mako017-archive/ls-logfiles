@@ -7,13 +7,21 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import SlideShow from "@/components/SlideShow.vue";
+import { mapActions } from "vuex";
 
 @Component({
 	components: {
 		SlideShow,
 	},
+	methods: mapActions(["getURL"]),
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+	getURL!: () => void;
+
+	mounted() {
+		this.getURL();
+	}
+}
 </script>
 
 <style>
