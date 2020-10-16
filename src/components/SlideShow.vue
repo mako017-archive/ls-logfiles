@@ -8,10 +8,6 @@
 			<button v-if="currentPage - 1 >= 1" class="left" @click="_decrementPage">Zurück</button>
 			<button class="right" @click="_incrementPage">{{ contBtn }}</button>
 		</div>
-		<!-- <div>
-			<p>Temporärer Output</p>
-			<p>{{ logData }}</p>
-		</div> -->
 	</div>
 </template>
 
