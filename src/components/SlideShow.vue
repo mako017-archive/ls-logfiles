@@ -20,7 +20,7 @@ import { mapGetters, mapActions } from "vuex";
 	components: {
 		Slide,
 	},
-	methods: mapActions(["decrementPage", "incrementPage", "appendLog"]),
+	methods: mapActions(["decrementPage", "incrementPage", "appendLog", "sendResults"]),
 	computed: mapGetters(["currentPageHTML", "currentPage", "currentPrompt", "logData", "pagesLength", "contBtn", "showPrompt"]),
 })
 export default class SlideShow extends Vue {
@@ -32,6 +32,7 @@ export default class SlideShow extends Vue {
 	pagesLength!: number;
 	decrementPage!: () => void;
 	incrementPage!: () => void;
+	sendResults!: () => void;
 	appendLog!: (log: string) => void;
 
 	private _decrementPage(): void {
@@ -44,7 +45,10 @@ export default class SlideShow extends Vue {
 	}
 	private _incrementPage(): void {
 		if (this.currentPage + 1 >= this.pagesLength) {
-			confirm("Bist Du sicher, dass Du das Lernprogramm beenden möchtest?");
+			if (confirm("Bist Du sicher, dass Du das Lernprogramm beenden möchtest?")) {
+				this.sendResults();
+				window.location.replace("https://google.com");
+			}
 			return;
 		}
 		const newTime = new Date().getTime();
@@ -62,7 +66,7 @@ export default class SlideShow extends Vue {
 
 <style lang="scss" scoped>
 .slide-container {
-	height: 89vh;
+	height: 90vh;
 }
 .container {
 	display: flex;

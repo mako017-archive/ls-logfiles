@@ -40,8 +40,8 @@ export default class Slide extends Vue {
 		width: 97vw;
 		position: absolute;
 		left: 1.5vw;
-		max-height: 90vh;
-		margin: 0.5rem 0;
+		max-height: 89vh;
+		margin: 0rem 0 0.5rem 0;
 		img {
 			max-height: 90vh;
 		}

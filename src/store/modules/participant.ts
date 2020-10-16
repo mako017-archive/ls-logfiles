@@ -1,4 +1,6 @@
 import { participantState } from "@/types";
+import axios from "axios";
+
 const state: participantState = {
 	VPCode: "testVP",
 	grp: 1,
@@ -19,6 +21,11 @@ const actions = {
 		const URLObj = new URLSearchParams(queryString);
 		if (URLObj.has("grp")) commit("mutateGrp", URLObj.get("grp"))
 		if (URLObj.has("vp")) commit("mutateVPCode", URLObj.get("vp"))
+	},
+	sendResults: async ()=>{
+		const response = await axios.post("/ls-logfiles/php/mysql.php", JSON.stringify(state));
+		console.log(response);
+		
 	}
 };
 const mutations = {
