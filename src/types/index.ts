@@ -1,6 +1,7 @@
 export interface pagesState {
 	allPages: Array<page>;
 	currentPage: number;
+	contBtn: string;
 }
 
 export interface page {
@@ -11,5 +12,6 @@ export interface page {
 
 export interface participantState {
 	VPCode: string;
+	grp: number;
 	logData: string;
 }

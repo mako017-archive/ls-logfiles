@@ -3,14 +3,15 @@
 		<div class="slide-container">
 			<Slide :html="currentPageHTML" />
 		</div>
+		<div class="prompt">Beliebiger Text</div>
 		<div class="button-container">
 			<button v-if="currentPage >= 1" class="left" @click="_decrementPage">Zurück</button>
-			<button v-if="currentPage + 1 < pagesLength" class="right" @click="_incrementPage">Weiter</button>
+			<button class="right" @click="_incrementPage">{{ contBtn }}</button>
 		</div>
-		<div>
+		<!-- <div>
 			<p>Temporärer Output</p>
 			<p>{{ logData }}</p>
-		</div>
+		</div> -->
 	</div>
 </template>
 
@@ -24,7 +25,7 @@ import { mapGetters, mapActions } from "vuex";
 		Slide,
 	},
 	methods: mapActions(["decrementPage", "incrementPage", "appendLog"]),
-	computed: mapGetters(["currentPageHTML", "currentPage", "logData", "pagesLength"]),
+	computed: mapGetters(["currentPageHTML", "currentPage", "logData", "pagesLength", "contBtn"]),
 })
 export default class SlideShow extends Vue {
 	timestamp!: number;
@@ -45,7 +46,10 @@ export default class SlideShow extends Vue {
 		this.decrementPage();
 	}
 	private _incrementPage(): void {
-		if (this.currentPage + 1 >= this.pagesLength) return;
+		if (this.currentPage + 1 >= this.pagesLength) {
+			confirm("Bist Du sicher, dass Du das Lernprogramm beenden möchtest?");
+			return;
+		}
 		const newTime = new Date().getTime();
 		const RT = newTime - this.timestamp;
 		this.timestamp = newTime;
@@ -61,7 +65,7 @@ export default class SlideShow extends Vue {
 
 <style lang="scss" scoped>
 .slide-container {
-	height: 95vh;
+	height: 90vh;
 }
 .container {
 	display: flex;
@@ -69,11 +73,23 @@ export default class SlideShow extends Vue {
 	width: 50vw;
 	margin: 0 auto;
 }
+.prompt {
+	text-align: right;
+	color: orangered;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
 .button-container {
 	display: flex;
 	margin-left: auto; // width: 100%;
 	button {
-		font-size: 1.2rem;
+		font-size: 2.2rem;
+		background-color: gray;
+		color: white;
+		border: none;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 	.right {
 		margin-left: 0.5rem;

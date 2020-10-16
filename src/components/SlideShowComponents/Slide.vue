@@ -1,5 +1,7 @@
 <template>
-	<div class="container" v-html="html"></div>
+	<div class="root">
+		<div class="container" v-html="html"></div>
+	</div>
 </template>
 
 <script lang="ts">
