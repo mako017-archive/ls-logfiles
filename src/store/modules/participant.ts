@@ -1,11 +1,12 @@
 import { participantState } from "@/types";
 const state: participantState = {
 	VPCode: "testVP",
-	grp: 0,
+	grp: 1,
 	logData: "",
 };
 const getters = {
 	VP: (state: participantState) => state.VPCode,
+	showPrompt: (state: participantState) => state.grp == 1 ? true : false,
 	logData: (state: participantState) => state.logData,
 };
 const actions = {
