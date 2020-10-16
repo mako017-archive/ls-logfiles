@@ -8,6 +8,7 @@ export interface page {
 	id: number;
 	type: string;
 	html: string;
+	prompt?: string;
 }
 
 export interface participantState {
