@@ -23,15 +23,14 @@ const actions = {
 		if (URLObj.has("vp")) commit("mutateVPCode", URLObj.get("vp"))
 	},
 	sendResults: async ()=>{
-		const response = await axios.post("/ls-logfiles/php/mysql.php", JSON.stringify(state));
-		console.log(response);
-		
+		const response = await axios.post("/other/ls-logfiles/php/mysql.php", JSON.stringify(state));
+		window.location.replace("https://google.com");
 	}
 };
 const mutations = {
 	mutateLog: (state: participantState, newLog: string) => (state.logData = newLog),
-	mutateGrp: (state: participantState, newGrp: string) => (state.logData = newGrp),
-	mutateVPCode: (state: participantState, newVPCode: string) => (state.logData = newVPCode),
+	mutateGrp: (state: participantState, newGrp: number) => (state.grp = newGrp),
+	mutateVPCode: (state: participantState, newVPCode: string) => (state.VPCode = newVPCode),
 };
 
 export default {

@@ -47,7 +47,6 @@ export default class SlideShow extends Vue {
 		if (this.currentPage + 1 >= this.pagesLength) {
 			if (confirm("Bist Du sicher, dass Du das Lernprogramm beenden möchtest?")) {
 				this.sendResults();
-				window.location.replace("https://google.com");
 			}
 			return;
 		}
