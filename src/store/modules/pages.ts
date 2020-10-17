@@ -5,14 +5,14 @@ const state: pagesState = {
 			id: 0,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild0.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild0.png" /></div>
 			`,
 		},
 		{
 			id: 1,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild1.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild1.png" /></div>
 			`,
 			prompt: "Schaue dir das gesamte Lernprogramm an, damit du weißt, was auf dich zukommt.",
 		},
@@ -20,21 +20,21 @@ const state: pagesState = {
 			id: 2,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild2.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild2.png" /></div>
 			`,
 		},
 		{
 			id: 3,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild3.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild3.png" /></div>
 			`,
 		},
 		{
 			id: 4,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild4.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild4.png" /></div>
 			`,
 			prompt: "Gehe während des Lernens vor und zurück, um zu überprüfen, ob du alles verstanden hast.",
 		},
@@ -42,35 +42,35 @@ const state: pagesState = {
 			id: 5,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild5.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild5.png" /></div>
 			`,
 		},
 		{
 			id: 6,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild6.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild6.png" /></div>
 			`,
 		},
 		{
 			id: 7,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild7.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild7.png" /></div>
 			`,
 		},
 		{
 			id: 8,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild8.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild8.png" /></div>
 			`,
 		},
 		{
 			id: 9,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild9.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild9.png" /></div>
 			`,
 			prompt: "Wenn du im Lernprogramm etwas verwirrend findest, gehe zurück, um es zu verstehen.",
 		},
@@ -78,28 +78,28 @@ const state: pagesState = {
 			id: 10,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild10.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild10.png" /></div>
 			`,
 		},
 		{
 			id: 11,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild11.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild11.png" /></div>
 			`,
 		},
 		{
 			id: 12,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild12.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild12.png" /></div>
 			`,
 		},
 		{
 			id: 13,
 			type: "default",
 			html: `
-			<div class="big-img"><img src="https://lets-test.it/other/logfiles/img/Bild13.png" /></div>
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild13.png" /></div>
 			`,
 			prompt: "Wiederhole, was du gelernt hast, indem du dir das Lernprogramm nochmal ganz von vorne anschaust.",
 		},
