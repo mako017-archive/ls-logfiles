@@ -14,7 +14,9 @@ const state: pagesState = {
 			html: `
 			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild1.png" /></div>
 			`,
-			prompt: "Schaue dir das gesamte Lernprogramm an, damit du weißt, was auf dich zukommt.",
+			prompt: `
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild1_mit.png" /></div>
+			`,
 		},
 		{
 			id: 2,
@@ -36,7 +38,9 @@ const state: pagesState = {
 			html: `
 			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild4.png" /></div>
 			`,
-			prompt: "Gehe während des Lernens vor und zurück, um zu überprüfen, ob du alles verstanden hast.",
+			prompt: `
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild4_mit.png" /></div>
+			`,
 		},
 		{
 			id: 5,
@@ -72,7 +76,9 @@ const state: pagesState = {
 			html: `
 			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild9.png" /></div>
 			`,
-			prompt: "Wenn du im Lernprogramm etwas verwirrend findest, gehe zurück, um es zu verstehen.",
+			prompt: `
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild9_mit.png" /></div>
+			`,
 		},
 		{
 			id: 10,
@@ -101,7 +107,9 @@ const state: pagesState = {
 			html: `
 			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild13.png" /></div>
 			`,
-			prompt: "Wiederhole, was du gelernt hast, indem du dir das Lernprogramm nochmal ganz von vorne anschaust.",
+			prompt: `
+			<div class="big-img"><img src="https://lets-test.it/other/ls-logfiles/img/Bild13_mit.png" /></div>
+			`,
 		},
 	],
 	currentPage: 0,

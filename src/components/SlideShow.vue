@@ -1,9 +1,9 @@
 <template>
 	<div class="container">
 		<div class="slide-container">
-			<Slide :html="currentPageHTML" />
+			<Slide v-if="showPrompt && currentPrompt" :html="currentPrompt" />
+			<Slide v-else :html="currentPageHTML" />
 		</div>
-		<div v-if="showPrompt && currentPrompt" class="prompt">{{ currentPrompt }}</div>
 		<div class="button-container">
 			<button v-if="currentPage - 1 >= 1" class="left" @click="_decrementPage">Zurück</button>
 			<button class="right" @click="_incrementPage">{{ contBtn }}</button>
