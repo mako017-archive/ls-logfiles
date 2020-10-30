@@ -8,7 +8,7 @@ const state: participantState = {
 };
 const getters = {
 	VP: (state: participantState) => state.VPCode,
-	showPrompt: (state: participantState) => state.grp == 1 ? true : false,
+	showPrompt: (state: participantState) => state.grp == 2 ? true : false,
 	logData: (state: participantState) => state.logData,
 };
 const actions = {
@@ -24,7 +24,7 @@ const actions = {
 	},
 	sendResults: async ()=>{
 		const response = await axios.post("/other/ls-logfiles/php/mysql.php", JSON.stringify(state));
-		window.location.replace("https://google.com");
+		window.location.replace(`https://www.soscisurvey.de/wissarbeit/?q=wissarbeit2&vpn=${state.VPCode}&grp=${state.grp}`);
 	}
 };
 const mutations = {
